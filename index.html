@@ -1,181 +1,84 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/flowers.png" type="image/x-icon">
-    <title>foryou</title>
-    <style type="text/css">
-        @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
-        @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
-
-        body {
-            font-family: 'Indie Flower', cursive !important;
-            background: #f092be;
-            /*CAPE HONEY*/
-            margin: 0px;
-            padding: 0px;
-        }
-
-        ::selection {
-            background: transparent;
-        }
-
-        h4 {
-            font-size: 30px;
-            line-height: 1px;
-            font-family: 'Amatic SC', cursive !important;
-        }
-
-        .color1 {
-            color: #ff6c47
-        }
-
-        /*MOUNTAIN MEADOW*/
-        .color2 {
-            color: #16aadb
-                /*TALL POPPY*/
-        }
-
-
-        .card {
-            color: #013243;
-            /*SHERPA BLUE*/
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300px;
-            height: 400px;
-            background: #e0e1dc;
-            transform-style: preserve-3d;
-            transform: translate(-50%, -50%) perspective(2000px);
-            box-shadow: inset 400px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5);
-            transition: 2s;
-        }
-
-        .card:hover {
-            transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
-            box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
-        }
-
-        .card:before {
-            content: '';
-            position: absolute;
-            top: -5px;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background: #BAC1BA;
-            transform-origin: bottom;
-            transform: skewX(-45deg);
-        }
-
-        .card:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: -5px;
-            width: 5px;
-            height: 100%;
-            background: #92A29C;
-            transform-origin: left;
-            transform: skewY(-45deg);
-        }
-
-        .card .imgBox {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            transform-origin: left;
-            transition: .7s;
-        }
-
-        .card .bark {
-            position: absolute;
-            background: #e0e1dc;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: .7s;
-        }
-
-        .card .imgBox img {
-            min-width: 250px;
-            max-height: 400px;
-        }
-
-        .card:hover .imgBox {
-            transform: rotateY(-135deg);
-        }
-
-        .card:hover .bark {
-            opacity: 1;
-            transition: .6s;
-            box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
-        }
-
-        .card .details {
-            position: absolute;
-            top: 0;
-            left: 0;
-            box-sizing: border-box;
-            padding: 0 0 0 10px;
-            z-index: -1;
-            margin-top: 40px;
-        }
-
-        .card .details p {
-            font-size: 15px;
-            line-height: 5px;
-            transform: rotate(-10deg);
-            padding: 0 0 0 20px;
-        }
-
-        .card .details h4 {
-            text-align: center;
-        }
-
-        .text-right {
-            text-align: right;
-        }
-    </style>
-    <link rel="stylesheet" type="text/css" href="https://cdn.prinsh.com/NathanPrinsley-textstyle/nprinsh-stext.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Teni ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&family=Great+Vibes&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#ff9ec7;overflow-x:hidden}
+.hidden{display:none!important}
+.hearts{position:fixed;inset:0;pointer-events:none;z-index:1}
+.heart{position:absolute;bottom:-40px;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+#screen1{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative;z-index:2}
+h1{font-family:'Playfair Display',serif;font-size:48px;line-height:1.1;color:#fff}
+.script{font-family:'Great Vibes',cursive;font-size:36px;color:#fff;margin-top:8px}
+.gift-btn{margin-top:26px;border:none;cursor:pointer;background:#fff;color:#ff4d7e;padding:18px 34px;border-radius:100px;font-size:17px;font-weight:700;box-shadow:0 18px 35px rgba(0,0,0,.2);animation:pulse 1.8s infinite}
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.06)}100%{transform:scale(1)}}
+#screen2{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;position:relative;z-index:2}
+.book-scene{perspective:1400px;width:300px;height:430px;cursor:pointer}
+.book{width:100%;height:100%;position:relative;transform-style:preserve-3d}
+.book-cover{position:absolute;inset:0;background:linear-gradient(135deg,#ff5e8a,#ff8fab);border-radius:6px 18px 18px 6px;z-index:3;transform-origin:left center;transition:transform 1.2s;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-align:center;padding:20px}
+.book.open .book-cover{transform:rotateY(-165deg)}
+.book-pages{position:absolute;inset:6px;background:#fffdf5;border-radius:4px 12px 12px 4px;padding:24px 20px;overflow-y:auto}
+.book-pages h2{font-family:'Caveat',cursive;font-size:36px;text-align:center;color:#ff6b35}
+.book-pages h2 span{color:#00a8e8;display:block;font-size:32px}
+.book-pages p{font-family:'Caveat',cursive;font-size:24px;line-height:1.35;color:#1a3a4a;margin-top:10px}
+.book-pages .sign{text-align:right;font-size:26px;margin-top:14px}
+.next-btn{margin-top:22px;border:none;background:#222;color:#fff;padding:14px 28px;border-radius:100px;cursor:pointer}
+#screen3{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;position:relative;z-index:2}
+#musicBtn{position:fixed;top:16px;right:16px;z-index:10;width:46px;height:46px;border-radius:50%;border:none;background:white;font-size:20px;cursor:pointer}
+</style>
 </head>
-
 <body>
-    <div class="card">
-        <div class="imgBox">
-            <Sediv class="bark"></Sediv>
-            <img src="https://assets.cardly.net/production/artwork/8/9/8/898e1f13-0dfa-6d62-664e-070005c2f046/detail/cute-happy-birthday-dog-p1-r2.webp"
-                width="100%" height="100%">
-        </div>
-        <div class="details">
-            <h4 class="color1">Happy Birthday</h2>
-                <h4 class="color2 margin">To You</h3>
-                    <p>Happy birthday kinan,</p>
-                    <p>today ur day,</p>
-                    <p>i just wanna say thank you very much for</p>
-                    <p>all the experience</p>
-                    <p>and interactions we've been through,</p>
-                    <p>im so glad to know u,</p>
-                    <p>i hope u'll always have a beautiful day.</p>
-                    <p>Don't forget about ur health,</p>
-                    <p>please stay healthy and happy,</p>
-                    <p>and once again..</p>
-                    <p>happy birthday to you</p>
-
-                    <p class="text-right">-sean</p>
-                    <p class="text-right"></p>
-
-                    <audio autoplay loop>
-                        <source src="musik/love.mp3" type="audio/mpeg">
-                     </audio>
-
-        </div>
-    </div>
-
+<button id="musicBtn" onclick="toggleMusic()">🔊</button>
+<div class="hearts" id="hearts"></div>
+<div id="screen1">
+<div style="font-size:42px">🎈</div>
+<h1>Happy Birthday,<br>Teni ❤️</h1>
+<div class="script">Today is all about you</div>
+<p style="color:white;max-width:320px;font-size:14px;line-height:1.6;margin-top:12px">A little magical surprise made just for you, by someone who loves you so much.</p>
+<button class="gift-btn" onclick="openGift()">🎁 Open Your Gift</button>
+<p style="color:white;margin-top:20px;font-size:13px">With love, from <b>Destiny</b> 💌</p>
+</div>
+<div id="screen2" class="hidden">
+<h2 style="color:white;font-family:'Playfair Display',serif;margin-bottom:16px">For The Birthday Girl 👑</h2>
+<div class="book-scene" onclick="toggleBook()">
+<div class="book" id="book">
+<div class="book-pages">
+<h2>HAPPY BIRTHDAY<span>TO YOU</span></h2>
+<p>Happy birthday Teni,<br>today ur day,<br>i just wanna say thank you very much for all the experience and interactions we've been through, im so glad to know u, i hope u'll always have a beautiful day. Don't forget about ur health, please stay healthy and happy, and once again.. happy birthday to you</p>
+<p class="sign">- Destiny ❤️</p>
+</div>
+<div class="book-cover">
+<div style="font-size:50px">💌</div>
+<div style="font-family:'Great Vibes',cursive;font-size:34px;margin-top:10px">For Teni</div>
+<div style="font-size:11px;letter-spacing:2px;margin-top:8px">A LETTER FROM DESTINY</div>
+<div style="margin-top:22px;font-size:13px;background:rgba(255,255,255,.3);padding:8px 14px;border-radius:100px">Tap to Open →</div>
+</div>
+</div>
+</div>
+<p style="color:white;margin-top:16px;font-size:13px">👆 Tap the book</p>
+<button class="next-btn hidden" id="nextBtn" onclick="showFinale()">Continue →</button>
+</div>
+<div id="screen3" class="hidden">
+<div style="font-size:80px">❤️</div>
+<h2 style="font-family:'Playfair Display',serif;font-size:40px;color:white;margin:12px 0">Happy Birthday<br>Teni!</h2>
+<p style="color:white;max-width:320px;line-height:1.6">May your year be as beautiful as you are.</p>
+<div style="font-family:'Great Vibes',cursive;font-size:36px;color:white;margin-top:14px">With love, Destiny ❤️</div>
+<button onclick="location.reload()" style="margin-top:22px;background:white;border:none;padding:12px 24px;border-radius:100px;cursor:pointer">↺ Replay</button>
+</div>
+<audio id="bgMusic" loop><source src="https://cdn.pixabay.com/audio/2023/09/19/audio_0a2e1a5a1b.mp3" type="audio/mpeg"></audio>
+<script>
+const box=document.getElementById('hearts');
+for(let i=0;i<25;i++){let s=document.createElement('div');s.className='heart';s.innerText=['❤️','💖','✨','🌸'][Math.floor(Math.random()*4)];s.style.left=Math.random()*100+'vw';s.style.fontSize=(14+Math.random()*18)+'px';s.style.animationDuration=(4+Math.random()*6)+'s';s.style.animationDelay=(Math.random()*5)+'s';box.appendChild(s)}
+let music=document.getElementById('bgMusic'),playing=false;
+function openGift(){document.getElementById('screen1').classList.add('hidden');document.getElementById('screen2').classList.remove('hidden');music.play().then(()=>{playing=true}).catch(()=>{})}
+function toggleBook(){document.getElementById('book').classList.toggle('open');document.getElementById('nextBtn').classList.remove('hidden')}
+function showFinale(){document.getElementById('screen2').classList.add('hidden');document.getElementById('screen3').classList.remove('hidden')}
+function toggleMusic(){if(playing){music.pause();playing=false;document.getElementById('musicBtn').innerText='🔇'}else{music.play();playing=true;document.getElementById('musicBtn').innerText='🔊'}}
+</script>
 </body>
-
 </html>
-
